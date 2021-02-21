@@ -1,6 +1,6 @@
 {
   "name": "demo1",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "commitlint": "^11.0.0",
+    "commitlint-config-cz": "^0.13.2",
     "conventional-changelog-custom-config": "^0.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
