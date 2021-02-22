@@ -1,11 +1,11 @@
 {
   "name": "demo1",
-  "version": "1.9.14",
+  "version": "1.9.15",
   "description": "",
   "main": "index.js",
   "scripts": {
     "cz": "git-cz",
-    "log": "standard-version --preset conventional-changelog-gitmoji-config",
+    "log": "standard-version --preset gitmoji-config",
     "release": "semantic-release",
     "changelog": "conventional-changelog -p gitmoji-config -i CHANGELOG.md -s -r 0",
     "test": "echo \"Error: no test specified\" && exit 1"
