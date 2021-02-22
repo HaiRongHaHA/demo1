@@ -13,7 +13,7 @@ module.exports = {
       name: 'init: 初始化'
     },
     {
-      value: 'docs',
+      value: ':pencil2: docs',
       name: 'docs: 文档变更'
     },
     {
