@@ -1,6 +1,6 @@
 {
   "name": "demo1",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,9 +32,9 @@
     "standard-version": "^9.1.1"
   },
   "changelog": {
-    "emojis": true,
-    "authorName": true,
-    "authorEmail": true
+    "withEmoji": true,
+    "showAuthor": true,
+    "titleLanguage": "zh-CN"
   },
   "config": {
     "commitizen": {
