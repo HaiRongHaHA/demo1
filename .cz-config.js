@@ -50,14 +50,17 @@ module.exports = {
     }
   ],
   messages: {
-    type: '请选择提交类型',
+    type: '请选择提交类型(必填)',
+    scope: ['请输入文件修改范围(可选)'],
     customScope: '请输入文件修改范围(可选)',
     subject: '请简要描述提交(必填)',
-    body: '请输入详细描述(可选，待优化去除，跳过即可)',
-    footer: '请输入要关闭的issue(待优化去除，跳过即可)',
-    confirmCommit: '确定提交说明?'
+    body: '请输入详细描述(可选)',
+    breaking: '列出任何BREAKING CHANGES(可选)',
+    footer: '请输入要关闭的issue(可选)',
+    confirmCommit: '确定提交此说明吗？'
   },
   allowCustomScopes: true,
-  allowBreakingChanges: ['feat', 'fix'],
+  askForBreakingChangeFirst: true,
+  allowBreakingChanges: [':zap: feat', 'fix'],
   subjectLimit: 100
 };

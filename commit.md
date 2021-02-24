@@ -141,3 +141,13 @@ fix #JIRA_ID
 > conventional-changelog
 
 > standard-version
+
+# 参考文献
+
+[好朋友lyx的博客](https://lyxdream.github.io)
+
+[Angular官方comit规范说明](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+
+[百度到的素不相识空谷先生的语雀文章](https://www.yuque.com/arvinxx-fe/workflow/e25c3948-dbae-4fc2-94af-661e883a2ef5)
+
+以及各个工具的文档和源码
