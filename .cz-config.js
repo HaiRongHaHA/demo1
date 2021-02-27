@@ -51,7 +51,7 @@ module.exports = {
   ],
   messages: {
     type: '请选择提交类型(必填)',
-    scope: ['请输入文件修改范围(可选)'],
+    // scope: ['请输入文件修改范围(可选)'],
     customScope: '请输入文件修改范围(可选)',
     subject: '请简要描述提交(必填)',
     body: '请输入详细描述(可选)',
@@ -60,7 +60,6 @@ module.exports = {
     confirmCommit: '确定提交此说明吗？'
   },
   allowCustomScopes: true,
-  askForBreakingChangeFirst: true,
   allowBreakingChanges: [':zap: feat', 'fix'],
-  subjectLimit: 100
+  subjectLimit: 72
 };
