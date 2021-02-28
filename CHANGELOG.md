@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.1.0](https://github.com/HaiRongHaHA/moonlit-night/compare/v2.0.6...v2.1.0) (2021-02-28)
+
+
+### ✨ Features
+
+* jjjj ([6757243](https://github.com/HaiRongHaHA/moonlit-night/commit/6757243)) by: **wanghairong**<wanghairong@weimiao.cn>
+
+
+
 ## [2.0.6](https://github.com/HaiRongHaHA/moonlit-night/compare/v2.0.5...v2.0.6) (2021-02-28)
 
 
