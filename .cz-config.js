@@ -12,6 +12,7 @@ const EMOJI_TYPES = {
   chore: ':rocket: chore',
   ci: ':construction_worker: ci',
 }
+
 module.exports = {
   types: [
     {
