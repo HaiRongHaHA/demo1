@@ -1,0 +1,11 @@
+div {
+  padding: 0;
+  margin: 0;
+  font-size: 1px;
+}
+
+$white:#fff;
+
+.shade {
+  color: color($white shade(10%));
+}

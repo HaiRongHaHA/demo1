@@ -15,25 +15,36 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
     "commitlint": "^11.0.0",
     "commitlint-config-gitmoji": "^2.2.1",
     "conventional-changelog": "^3.1.24",
     "conventional-changelog-gitmoji-config": "^1.4.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.9.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "standard-version": "^9.1.1",
     "stylelint": "^13.11.0",
+    "stylelint-config-recess-order": "^2.4.0",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-scss": "^3.19.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
   },
   "changelog": {
     "withEmoji": true,
     "showAuthor": true
   },
   "lint-staged": {
-    "*.scss": [
+    "./src/*.js": [
+      "eslint --fix"
+    ],
+    "*.{scss,css,html,vue}": [
       "stylelint --fix"
     ]
   },
