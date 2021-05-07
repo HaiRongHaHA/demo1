@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.1](https://github.com/HaiRongHaHA/moonlit-night/compare/v2.2.0...v2.2.1) (2021-05-07)
+
+
+### 💄 Styles
+
+* **all**: 添加stylelint ([850b78c](https://github.com/HaiRongHaHA/moonlit-night/commit/850b78c)) by: **HaiRongHaHA**<whr9743@163.com>
+
+
+
 # [2.2.0](https://github.com/HaiRongHaHA/moonlit-night/compare/v2.0.5...v2.2.0) (2021-05-06)
 
 
