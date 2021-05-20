@@ -1,0 +1,21 @@
+/** @define Test */
+.Test {
+  display: none;
+  width: 100px;
+}
+
+.Test__r {
+  width: 80px;
+}
+
+/** @define Test2 */
+.Test2__le--a {
+  width: 80px;
+}
+
+/** @end */
+div {
+  padding: 0;
+  margin: 0;
+  font-size: 1px;
+}
