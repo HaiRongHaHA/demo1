@@ -23,7 +23,8 @@ export default createStore<RootStateTypes>({
 export const key: InjectionKey<Store<AllStateTypes>> = Symbol('vue-store');
 
 /**
- *
+ * @function useStore useStore方法封装
+ * @returns {object} store实例
  */
 export function useStore<T = AllStateTypes>() {
   return baseUseStore<T>(key);
