@@ -1,0 +1,66 @@
+// 水平垂直居中
+@mixin horVerCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 垂直居中
+@mixin verCenter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// 水平居中
+@mixin horCenter {
+  display: flex;
+  justify-content: center;
+}
+
+// 单行文本省略并添加省略号
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 多行文本省略并添加省略号
+@mixin ellipsisRows($row) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+
+// 1PX border解决方案
+@mixin onePxBorder($border, $value, $borderRadiusVal: 0) {
+  & {
+    position: relative;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    pointer-events: none; // pointer-events: none 的作用是让元素实体 “虚化”。点击事件穿透这个元素
+    content: '';
+
+    /* prettier-ignore */
+    border-radius: $borderRadiusVal;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    #{$border}: $value;
+  }
+}
+
+// 设置ios安全区域
+@mixin setSafeArea($attr: 'padding-bottom') {
+  #{$attr}: constant(safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+  #{$attr}: env(safe-area-inset-bottom); /* 兼容 iOS >= 11.2 */
+}

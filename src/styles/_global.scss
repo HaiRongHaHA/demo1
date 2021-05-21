@@ -1,0 +1,10 @@
+@import 'normalize.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  @include background_color('primary');
+}
