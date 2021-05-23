@@ -20,6 +20,7 @@ export default defineConfig({
     }
   },
   server: {
+    host: '192.168.31.196',
     port: 4001, // 设置服务启动端口号
     open: true, // 设置服务启动时是否自动打开浏览器
     cors: true, // 允许跨域

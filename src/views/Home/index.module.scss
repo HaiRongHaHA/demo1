@@ -13,58 +13,50 @@
 @keyframes twinkle {
   20% {
     opacity: 0.5;
-    transform: scale(0.5);
+    transform: rotate(45deg) scale(0.5);
   }
 }
 
 .home__star-gruop {
   position: relative;
-  height: 300px;
+  height: 220px;
 
   & div:nth-child(2) {
     top: 60%;
     left: 18%;
     animation-name: twinkle;
-    animation-duration: 1.5s;
+    animation-duration: 0.9s;
   }
 
   & div:nth-child(3) {
     top: 15%;
     left: 45%;
     animation-name: twinkle;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
   }
 
   & div:nth-child(4) {
     top: 100%;
     right: 4%;
+    left: inherit;
     animation-name: twinkle;
-    animation-duration: 0.9s;
+    animation-duration: 2s;
   }
 }
 
 .home__star {
   position: absolute;
-  top: 0;
+  top: 10px;
+  left: 10px;
   z-index: 1;
-  width: 0;
-  height: 0;
-  border: 18px solid transparent;
-  border-bottom-color: themed('adornColor');
+  width: 18px;
+  height: 18px;
+  background-color: themed('adornColor');
+  border-radius: 2px;
+  transform: rotate(45deg);
   animation-name: twinkle;
   animation-duration: 1.3s;
   animation-iteration-count: infinite;
-
-  &::after {
-    position: absolute;
-    top: 18px;
-    left: -18px;
-    width: 0;
-    height: 0;
-    content: "";
-    border: 18px solid transparent;
-    border-top-color: themed('adornColor');
-  }
 }
 
 .home__moon {
@@ -76,7 +68,7 @@
   height: 160px;
   background-color: themed('adornColor');
   border-radius: 50%;
-  box-shadow: 0 0 30px 30px rgb(255 248 216 / 20%);
+  box-shadow: 0 0 30px 30px rgb(206 227 253 / 20%);
 }
 
 .home__moon--curved {
@@ -85,3 +77,38 @@
 }
 
 /** @end */
+
+/** @define verse; weak */
+.verse {
+  @include horVerCenter;
+
+  flex-direction: column;
+  height: 100%;
+  height: 800px;
+  padding: 40px;
+  margin: 80px 46px 0;
+  overflow-y: auto;
+  color: #002137;
+  background-color: themed('adornColor');
+  border-radius: 4px;
+}
+
+.verse__title {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+
+  p:nth-last-child(1) {
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: right;
+  }
+}
+
+.verse__text {
+  font-size: 34px;
+  line-height: 80px;
+  letter-spacing: 2px;
+}

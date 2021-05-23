@@ -8,7 +8,7 @@
 // 垂直居中
 @mixin verCenter {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 
