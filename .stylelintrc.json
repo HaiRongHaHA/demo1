@@ -4,8 +4,8 @@
     "stylelint-config-recess-order"
   ],
   "plugins": [
-    "stylelint-scss",
-    "stylelint-selector-bem-pattern"
+    "stylelint-selector-bem-pattern",
+    "stylelint-scss"
   ],
   "rules": {
     "at-rule-no-unknown": null,

@@ -1,0 +1,87 @@
+/** @define home; weak */
+.home {
+  @include homeLinearbgBg();
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: themed('adornColor');
+  background-attachment: fixed;
+}
+
+@keyframes twinkle {
+  20% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+}
+
+.home__star-gruop {
+  position: relative;
+  height: 300px;
+
+  & div:nth-child(2) {
+    top: 60%;
+    left: 18%;
+    animation-name: twinkle;
+    animation-duration: 1.5s;
+  }
+
+  & div:nth-child(3) {
+    top: 15%;
+    left: 45%;
+    animation-name: twinkle;
+    animation-duration: 2s;
+  }
+
+  & div:nth-child(4) {
+    top: 100%;
+    right: 4%;
+    animation-name: twinkle;
+    animation-duration: 0.9s;
+  }
+}
+
+.home__star {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+  border-bottom-color: themed('adornColor');
+  animation-name: twinkle;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+
+  &::after {
+    position: absolute;
+    top: 18px;
+    left: -18px;
+    width: 0;
+    height: 0;
+    content: "";
+    border: 18px solid transparent;
+    border-top-color: themed('adornColor');
+  }
+}
+
+.home__moon {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  background-color: themed('adornColor');
+  border-radius: 50%;
+  box-shadow: 0 0 30px 30px rgb(255 248 216 / 20%);
+}
+
+.home__moon--curved {
+  background-color: transparent;
+  box-shadow: 30px 30px 0 0 themed('adornColor');
+}
+
+/** @end */

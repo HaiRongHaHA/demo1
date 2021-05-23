@@ -1,8 +1,12 @@
 $themes: (
   light: (
-    primary: rgb(40, 212, 6),
+    linearLightColor: #fff,
+    linearDarkColor: rgb(40, 212, 6),
   ),
   dark: (
-    primary: #333,
+    // home主题背景渐变色
+    linearLightColor: #0082d8,
+    linearDarkColor: #002,
+    adornColor:#cee3fd,// 点缀色（星星，月亮）
   ),
-);
+  );

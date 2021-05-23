@@ -22,23 +22,9 @@
   @return map-get($theme-map, $key);
 }
 
-//获取背景颜色
-@mixin background_color($color) {
+// home主题渐变背景
+@mixin homeLinearbgBg() {
   @include themeify {
-    background-color: themed($color) !important;
-  }
-}
-
-//获取字体颜色
-@mixin font_color($color) {
-  @include themeify {
-    color: themed($color) !important;
-  }
-}
-
-//获取边框颜色
-@mixin border_color($color) {
-  @include themeify {
-    border-color: themed($color) !important;
+    background: linear-gradient(themed('linearDarkColor'), themed('linearLightColor'));
   }
 }
